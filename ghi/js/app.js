@@ -1,6 +1,6 @@
 function createCard(name, description, pictureUrl, startTime, endTime, location) {
     return `
-    <div class="col-md-4" class="shadow p-3 mb-5 bg-white rounded">
+    <div class="col-md-4">
         <div class="shadow p-0 mb-3 bg-white rounded">
             <div class="card">
                 <img src="${pictureUrl}" class="card-img-top">
