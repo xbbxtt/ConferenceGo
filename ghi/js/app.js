@@ -20,6 +20,15 @@ function createCard(name, description, pictureUrl, startTime, endTime, location)
 
 
 
+
+function alert(message) {
+var wrapper = document.querySelector('.row')
+wrapper.innerHTML = `<div class="alert alert-danger" role="alert">${message}</div>`
+
+}
+
+
+
 window.addEventListener('DOMContentLoaded', async () => {
 
 
@@ -30,6 +39,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         if (!response.ok){
             console.error("response is bad");
+            alert('url is invalid!!!')
+
         } else {
             const data = await response.json();
 
